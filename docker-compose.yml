@@ -1,0 +1,16 @@
+version: '3.1'
+services:
+  db:
+    image: mysql:8.0
+    container_name: demo_mvc
+    environment: 
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql:/var/lib/mysql
+      
+      
+
+volumes:
+  mysql:
